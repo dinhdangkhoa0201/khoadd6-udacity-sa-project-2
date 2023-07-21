@@ -1,0 +1,26 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,19255.88,231070.56,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,493.65,5923.8,USD,,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,2609,31308,USD,,"Data transfer out to internet (30 TB per month), Data transfer out to origin (10 GB per month), Number of requests (HTTPS) (100000000 per month)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,235.52,2826.24,USD,,S3 Standard storage (10 TB per month)
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,,
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,624.08,7488.96,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (m5.xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (50 GB), DT Inbound: Internet (10 TB per month), DT Outbound: Amazon CloudFront (10 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,6245.08,74940.96,USD,,"Tenancy (Dedicated Instances), Operating system (Linux), Workload (Consistent, Number of instances: 4), Advance EC2 instance (m5.8xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (enabled), EBS Storage amount (50 GB), DT Inbound: Internet (10 TB per month), DT Outbound: Amazon CloudFront (10 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,2525.85,30310.2,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (1 TB), Nodes (1), Instance Type (db.m5.4xlarge), Utilization (On-Demand only) (24 Hours/Day), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (10 GB), Total Size of Backup Processed for Export (GB) (10 per month), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Cost for total retention (per vCPU per month) (2.19)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,196.69,2360.28,USD,,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,Network Load Balancer,0,155.73,1868.76,USD,,"Number of Network Load Balancers (2), Processed bytes per NLB for TCP (10 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon CloudWatch,0,6170.28,74043.36,USD,,"Number of Metrics (includes detailed and custom metrics) (4), Standard Logs: Data Ingested (10 TB), Number of Custom/Cross-account events (1000000000), Number of Dashboards (4)"
+,,,,,,,,,
+,,,,,,,,,
+,,,,,Amazon CloudFront - Increase 'Data transfer out to internet',,,,
+,,,,,"Amazon EC2 - Change instance to m5.xlarge, On-demand",,,,
+,,,,,"Amazon EC2 - Change instance to m5.8xlarge, On-demand",,,,
+,,,,,Application Load Balancer - Increase number of ALB,,,,
+,,,,,Network Load Balancer - Add 2 NLB,,,,
+,,,,,Amazon CloudWatch - Increase 'Standard Logs' to 10TB,,,,
